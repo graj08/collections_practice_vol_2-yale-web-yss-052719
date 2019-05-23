@@ -64,7 +64,12 @@ def organize_schools (schools)
   return_hash = Hash.new
   schools.each do |name,loc_hash|
     location_string = loc_hash[:location]
+    if return_hash.keys.include?(location_string)
+      current_value = return_hash[location_string]
+      return_hash[location_string] = current_value.push(name)
+    else
     return_hash[location_string] = [name]
+  end
   end
   return_hash
 end
