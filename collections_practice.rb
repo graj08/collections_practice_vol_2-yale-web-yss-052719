@@ -54,7 +54,7 @@ def merge_data(keys, data)
  [new_data_1, new_data_2]
 end
 
-  
+
 def find_cool (hash)
   if cool[1].values[1] == "cool"
     [cool[1]]
