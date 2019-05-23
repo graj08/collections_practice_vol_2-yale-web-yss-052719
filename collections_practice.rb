@@ -66,4 +66,5 @@ def organize_schools (schools)
     location_string = loc_hash[:location]
     return_hash[location_string] = [name]
   end
+  return_hash
 end
