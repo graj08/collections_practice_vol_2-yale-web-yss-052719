@@ -47,7 +47,7 @@ end
 end
 
 def merge_data(keys, data)
-  return {
+  {
     [
         {
              :first_name => "blake",
